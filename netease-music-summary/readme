@@ -1,0 +1,21 @@
+ ##
+ position：static 默认。
+ position: absolute; 相对于父级第一个非static定位的元素
+
+ ##  linear-gradient
+ 渐变角度.to bottom
+ 渐变线
+
+ ## 适配
+ transform:scale(0.75)
+ transform:scale(0.5)
+ transform:scale(0.3)
+
+//xxx.png  根据当前环境自己补全
+http下 补http:
+https下  补https:
+
+position 脱离文档流
+动画就是CSS属性的改变
+当一个CSS属性改变了 浏览器将其绘制在页面上 同时也会影响其他元素
+让其他元素少受到该元素的影响
