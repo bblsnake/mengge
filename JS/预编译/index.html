@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=l, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<script>
+// 变量 声明提升
+//   console.log(a); // undefine
+//   var a = 123
+// //  函数声明整体提升
+// test(); // 123
+// function test() {
+//   console.log('123')
+// }
+
+// ----------------------------------------------
+function fn(a) {
+  console.log(a)
+  let a = 123;
+  console.log(a)
+  function a() {}
+  console.log(a)
+  var b = function () {}
+  console.log(b)
+  function d() {}
+}
+fn(1)
+</script>
+</body>
+</html>
