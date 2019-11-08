@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //1
+    function foo() {
+      console.log(this) //window
+    }
+
+    //2
+    //3
+    //call apply bind
+    //bind返回一个绑定了this的函数
+    function bar() {
+      console.log(this.name);
+    }
+    var obj3 = {
+      name: 'obj3'
+    }
+    var callbar = bar.call(obj3)
+    var bindbar = bar.bind(obj3)
+
+
+var status = 'global';
+var obj = {
+  status: 'obj',
+  getStatus: function() {
+    return this.status;
+  }
+}
+console.log(obj.getStatus());
+var fun = obj.getStatus;
+console.log(fun());  
+//this 调用时才能决定指向哪里
+  </script>
+</body>
+</html>
